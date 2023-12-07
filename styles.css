@@ -244,6 +244,9 @@ a {
 .videos {
     display: flex;
     flex: 1;
+    align-content: space-between;
+    justify-content: center;
+    gap: 50px;
 }
 
 .videos .column {
@@ -251,15 +254,15 @@ a {
     align-items: center;
     justify-content: center;
     align-self: center;
-
+    width: 100%;
 }
 
-.videos .column video {
-    width: 90%;
+.videos .column iframe {
+    
     transition: all 0.2s linear 0s;
 }
 
-.column video:hover {
+.column iframe:hover {
     transform: scale(1.05);
 }
 
@@ -275,7 +278,9 @@ a {
         flex-direction: column;
         row-gap: 40px;
         align-items: center;
-        padding: 20px;
+        justify-content: center;
+        align-content: center;
+        padding: 30px;
     }
 
     .getInTouchBox {
